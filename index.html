@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="btnContainer addBook">
+            <button class="addBookBtn btn">+ Add Book</button>
+        </div>
+        <div class="mainGrid">
+            <!-- Rendered Cards will come into this -->
+        </div>
+    </div>
+    <!-- for active/hide -->
+    <div class="popupCover">
+        <!-- for flex box(to center popup) -->
+        <div class="popupContainer">
+            <form class="popup form" autocomplete="off">
+                <h2 class="formTitle">Add New Book</h3>
+                <div class="formRow">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" placeholder="Title" required>
+                </div>
+                <div class="formRow">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author" placeholder="Author" required>
+                </div>
+                <div class="formRow">
+                    <label for="pages">Pages</label>
+                    <input type="number" name="pages" id="pages" placeholder="Pages" max="10000" required>
+                </div>
+                <div class="formRow">
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+                <div class="btnContainer confirm">
+                    <button class="confirmBtn btn addBook" type="submit">Confirm</button>   
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
